@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, Bestie! 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta name="description" content="A little birthday website made with love." />
+</head>
+<body>
+  <div id="confetti-container" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <h1>Happy Birthday, <span id="friendName">[HER_NAME]</span>! 💖</h1>
+    <p class="tagline">Made with love by <span id="yourName">[YOUR_NAME]</span></p>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <img src="images/bestie.jpg" alt="A happy photo of my best friend" class="hero-photo" />
+      <div class="hero-text">
+        <h2>To my favourite human ✨</h2>
+        <p class="lead">
+          Another trip around the sun! I’m so grateful for your kindness, laughter, and the way you
+          make everything brighter. Scroll for memories, a letter, and a tiny surprise!
+        </p>
+
+        <div class="buttons">
+          <button id="surpriseBtn" class="btn primary">Launch Surprise 🎉</button>
+          <button id="letterBtn" class="btn">Open Letter 💌</button>
+        </div>
+
+        <div class="countdown" role="status" aria-live="polite">
+          <h3>Countdown to your big day</h3>
+          <div id="countdownTimer" class="timer">Loading…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memories Grid -->
+    <section class="memories container">
+      <h2>Favourite Memories 📸</h2>
+      <div class="grid">
+        <figure><img src="images/img1.jpg" alt="Memory 1"><figcaption>Best day ever</figcaption></figure>
+        <figure><img src="images/img2.jpg" alt="Memory 2"><figcaption>Inside jokes 😆</figcaption></figure>
+        <figure><img src="images/img3.jpg" alt="Memory 3"><figcaption>Food adventures</figcaption></figure>
+        <figure><img src="images/img4.jpg" alt="Memory 4"><figcaption>Sunset chats</figcaption></figure>
+        <figure><img src="images/img5.jpg" alt="Memory 5"><figcaption>Road trips</figcaption></figure>
+        <figure><img src="images/img6.jpg" alt="Memory 6"><figcaption>More to come…</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section id="letter" class="letter container">
+      <h2>My Letter to You 💌</h2>
+      <p>
+        Dear <span class="inline-name">[HER_NAME]</span>,<br>
+        I can’t imagine life without your friendship. Thank you for every pep talk, every silly reel,
+        and every late-night chat. This year, I hope you get all the love you give to everyone else —
+        multiplied. You deserve it all. Happy Birthday! 🎂
+      </p>
+      <p class="signature">— <span class="inline-name">[YOUR_NAME]</span></p>
+    </section>
+
+    <!-- Reasons -->
+    <section class="reasons container">
+      <h2>3 Reasons You’re Amazing 🌟</h2>
+      <ol>
+        <li>Your heart is huge — you care deeply about people.</li>
+        <li>You turn boring days into fun adventures.</li>
+        <li>You inspire me to be braver and kinder.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with ❤️ and a little JavaScript.</p>
+  </footer>
+
+  <audio id="song" src="song.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
