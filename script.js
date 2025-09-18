@@ -1,8 +1,8 @@
 /* ======= PERSONALISE THESE ======= */
-const FRIEND_NAME = "[HER_NAME]";
-const YOUR_NAME   = "[YOUR_NAME]";
+const FRIEND_NAME = "[MY CUTIE]";
+const YOUR_NAME   = "[Yug]";
 /* Put her birthday here in YYYY-MM-DD format (example: 2025-12-05) */
-const BIRTHDAY_ISO = "2025-12-05";
+const BIRTHDAY_ISO = "2025-09-21";
 /* ================================= */
 
 document.getElementById("friendName").textContent = FRIEND_NAME;
@@ -71,4 +71,5 @@ surpriseBtn.addEventListener("click", async () => {
 });
 letterBtn.addEventListener("click", () => {
   document.getElementById("letter").scrollIntoView({behavior:"smooth"});
+
 });
