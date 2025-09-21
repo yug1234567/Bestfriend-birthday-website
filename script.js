@@ -2,7 +2,7 @@
 const FRIEND_NAME = "[MY CUTIE]";
 const YOUR_NAME   = "[Yug]";
 /* Put her birthday here in YYYY-MM-DD format (example: 2025-12-05) */
-const BIRTHDAY_ISO = "2025-09-21";
+const BIRTHDAY_ISO = "2025-09-22";
 /* ================================= */
 
 document.getElementById("friendName").textContent = FRIEND_NAME;
@@ -73,3 +73,4 @@ letterBtn.addEventListener("click", () => {
   document.getElementById("letter").scrollIntoView({behavior:"smooth"});
 
 });
+
